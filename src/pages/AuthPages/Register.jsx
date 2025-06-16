@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { use } from "react";
 import { NavLink, useLocation, useNavigate } from "react-router";
 import { AuthContext } from "../../provider/AuthProvider";
@@ -12,6 +12,10 @@ const Register = () => {
   const [passwordError, setPasswordError] = useState("");
   const location = useLocation();
   const navigate = useNavigate();
+
+  useEffect(() => {
+    document.title = "Register | JobHunt";
+  }, []);
 
   const handleGoogleSignUp = () => {
     googleSignIn()

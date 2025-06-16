@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useLoaderData, useParams } from "react-router";
 
 const CompanyDetails = () => {
@@ -6,6 +6,10 @@ const CompanyDetails = () => {
   const allCompaniesData = useLoaderData();
 
   const company = allCompaniesData.find((c) => c.id === id);
+  useEffect(() => {
+    document.title = `${company.name} Details | JobHunt`;
+  }, [company.name]);
+
   const [selectedJob, setSelectedJob] = useState(null);
 
   if (!company) return <p className="text-center">Company not found.</p>;

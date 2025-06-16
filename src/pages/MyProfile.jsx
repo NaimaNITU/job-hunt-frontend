@@ -1,8 +1,12 @@
-import React, { use } from "react";
+import React, { use, useEffect } from "react";
 import { AuthContext } from "../provider/AuthProvider";
 
 const MyProfile = () => {
   const { user } = use(AuthContext);
+
+  useEffect(() => {
+    document.title = "My Profile | JobHunt";
+  }, []);
 
   return (
     <div className="min-h-screen flex justify-center items-center bg-base-200 px-4">

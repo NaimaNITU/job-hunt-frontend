@@ -29,12 +29,12 @@ const Footer = () => {
               </NavLink>
             </li>
             <li>
-              <NavLink to="/jobs" className="hover:text-white">
+              <NavLink to="/allJobs" className="hover:text-white">
                 All Jobs
               </NavLink>
             </li>
             <li>
-              <NavLink to="/signin" className="hover:text-white">
+              <NavLink to="/login" className="hover:text-white">
                 Login
               </NavLink>
             </li>

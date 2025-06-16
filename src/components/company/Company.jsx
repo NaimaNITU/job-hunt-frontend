@@ -5,6 +5,7 @@ const Company = () => {
   const [companies, setCompanies] = useState([]);
 
   useEffect(() => {
+    document.title = "Top Hiring Companies | JobHunt";
     fetch("/companyData.json")
       .then((res) => res.json())
       .then((data) => setCompanies(data));

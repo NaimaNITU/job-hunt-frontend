@@ -1,6 +1,8 @@
 import React from "react";
 import { Link } from "react-router";
-import heroImg from "../assets/images/hero.png";
+// import heroImg from "../assets/images/hero.png";
+import { motion } from "framer-motion";
+import JobImageGrid from "./JobImageGrid";
 
 const Hero = () => {
   return (
@@ -8,10 +10,15 @@ const Hero = () => {
       <div className="w-10/12 mx-auto  flex flex-col md:flex-row items-center justify-between">
         {/* Left Content */}
         <div className="md:w-1/2 mb-10 md:mb-0">
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6 leading-tight">
+          <motion.h1
+            className="text-4xl md:text-4xl font-bold text-gray-800 mb-6 leading-tight"
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }}
+            style={{ transformOrigin: "left center" }}
+          >
             Discover Your Next{" "}
             <span className="text-blue-600">Career Opportunity</span>
-          </h1>
+          </motion.h1>
           <p className="text-lg text-gray-600 mb-6">
             Job Hunt helps you explore a wide range of jobs from top companies.
             Find roles that match your skills, review job criteria, and apply
@@ -26,12 +33,8 @@ const Hero = () => {
         </div>
 
         {/* Right Image */}
-        <div className="md:w-1/2 flex justify-center">
-          <img
-            src={heroImg}
-            alt="Job search illustration"
-            className="w-full max-w-md md:max-w-lg rounded-4xl shadow-md border-b-6 border-l-6 border-blue-600"
-          />
+        <div className="md:w-1/2  flex justify-center">
+          <JobImageGrid />
         </div>
       </div>
     </section>

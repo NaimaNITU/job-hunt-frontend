@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router";
 import { FaExclamationTriangle } from "react-icons/fa";
 
 const ErrorPage = () => {
+  useEffect(() => {
+    document.title = "Error Page | JobHunt";
+  }, []);
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-base-200 px-4 text-center">
       <div className="text-red-600 text-6xl mb-4">

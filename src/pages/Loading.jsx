@@ -1,6 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 const Loading = () => {
+  useEffect(() => {
+    document.title = "Loading | JobHunt";
+  }, []);
   return (
     <div className="min-h-screen flex items-center justify-center bg-base-100">
       <div className="flex flex-col items-center gap-4">

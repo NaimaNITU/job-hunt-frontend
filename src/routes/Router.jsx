@@ -8,6 +8,8 @@ import Register from "../pages/AuthPages/Register";
 import PrivateRoute from "../provider/PrivateRoute";
 import ErrorPage from "../pages/ErrorPage";
 import MyProfile from "../pages/MyProfile";
+import AllJobs from "../pages/AllJobs";
+import ApplyWithConfidence from "../pages/ApplyWithConfidence";
 
 export const router = createBrowserRouter([
   {
@@ -48,6 +50,24 @@ export const router = createBrowserRouter([
             <MyProfile></MyProfile>{" "}
           </PrivateRoute>
         ),
+      },
+      {
+        path: "/allJobs",
+        loader: () => fetch("/companyData.json"),
+        Component: AllJobs,
+      },
+      {
+        path: "/applyJobs",
+        element: (
+          <PrivateRoute>
+            {" "}
+            <ApplyWithConfidence></ApplyWithConfidence>{" "}
+          </PrivateRoute>
+        ),
+      },
+      {
+        path: "*",
+        Component: ErrorPage,
       },
     ],
   },

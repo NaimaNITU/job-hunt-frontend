@@ -1,4 +1,4 @@
-import React, { use, useState } from "react";
+import React, { use, useEffect, useState } from "react";
 import { Navigate, NavLink, useLocation } from "react-router";
 import { AuthContext } from "./../../provider/AuthProvider";
 import { useNavigate } from "react-router";
@@ -8,6 +8,10 @@ const Login = () => {
   const { userSignIn, googleSignIn } = use(AuthContext);
   const location = useLocation();
   const navigate = useNavigate();
+
+  useEffect(() => {
+    document.title = "Login | JobHunt";
+  }, []);
 
   const handleLogin = (event) => {
     event.preventDefault();
