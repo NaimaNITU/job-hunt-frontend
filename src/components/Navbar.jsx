@@ -1,6 +1,6 @@
 import React, { use } from "react";
 import { Link, NavLink } from "react-router";
-import { FaPhoenixFramework, FaSignOutAlt, FaUserCircle } from "react-icons/fa";
+import { FaPhoenixFramework, FaSignOutAlt, FaUserAlt } from "react-icons/fa";
 import { AuthContext } from "../provider/AuthProvider";
 
 const Navbar = () => {
@@ -55,21 +55,23 @@ const Navbar = () => {
           {/* Auth Links */}
           {user ? (
             <>
-              {user.photoURL ? (
-                <img
-                  className="w-10 h-10 rounded-full"
-                  src={user.photoURL}
-                  alt=""
-                />
-              ) : (
-                <FaUserCircle size={12} />
-              )}
+              <Link to="/myProfile">
+                {user.photoURL ? (
+                  <img
+                    className="w-10 h-10 rounded-full"
+                    src={user.photoURL}
+                    alt="User"
+                  />
+                ) : (
+                  <FaUserAlt className="w-9 h-9 text-gray-600" />
+                )}
+              </Link>
 
               <NavLink
                 onClick={handleSignOut}
                 className="text-blue-600 border border-blue-600 px-4 py-2 rounded-md hover:bg-blue-600 hover:text-white"
               >
-                Sign Out
+                Log Out
               </NavLink>
             </>
           ) : (

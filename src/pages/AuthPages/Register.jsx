@@ -4,7 +4,8 @@ import { NavLink, useLocation, useNavigate } from "react-router";
 import { AuthContext } from "../../provider/AuthProvider";
 
 const Register = () => {
-  const { userRegistration, updateUserProfile, setUser } = use(AuthContext);
+  const { userRegistration, updateUserProfile, setUser, googleSignIn } =
+    use(AuthContext);
   const [nameError, setNameError] = useState("");
   const [emailError, setEmailError] = useState("");
   const [photoError, setPhotoError] = useState("");
@@ -12,11 +13,25 @@ const Register = () => {
   const location = useLocation();
   const navigate = useNavigate();
 
+  const handleGoogleSignUp = () => {
+    googleSignIn()
+      .then((result) => {
+        const user = result.user;
+        alert("Login Successfully");
+        navigate(location.state || "/");
+      })
+      .catch((error) => {
+        const errorCode = error.code;
+        const formattedError = errorCode.split("/")[1]; // "invalid-credential"
+        alert(formattedError);
+      });
+  };
+
   const handleRegister = (event) => {
     event.preventDefault();
     const form = event.target;
     const name = form.name.value;
-    //validate name
+
     if (name === "") {
       setNameError("Name is required");
       return;
@@ -28,7 +43,6 @@ const Register = () => {
     }
 
     const email = form.email.value;
-    //validate email
     if (email === "") {
       setEmailError("Email is required");
       return;
@@ -40,7 +54,6 @@ const Register = () => {
     }
 
     const photoURL = form.photoURL.value;
-    //validate photoURL
     if (photoURL === "") {
       setPhotoError("Photo is required");
       return;
@@ -49,7 +62,6 @@ const Register = () => {
     }
 
     const password = form.password.value;
-    //validate password
     if (password === "") {
       setPasswordError("Password is required");
       return;
@@ -66,7 +78,6 @@ const Register = () => {
       setPasswordError("");
     }
 
-    // Firebase registration logic will go here
     userRegistration(email, password)
       .then((result) => {
         const user = result.user;
@@ -89,10 +100,13 @@ const Register = () => {
   return (
     <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl pt-10 my-6 mx-auto">
       <h1 className="text-3xl font-bold text-center mb-4">Register</h1>
-
       {/* Google Register First */}
       <div className="px-8">
-        <button type="button" className="btn btn-outline w-full mb-4">
+        <button
+          onClick={handleGoogleSignUp}
+          type="button"
+          className="btn btn-outline w-full mb-4"
+        >
           <img
             src="https://www.svgrepo.com/show/475656/google-color.svg"
             alt="Google"
@@ -101,14 +115,11 @@ const Register = () => {
           Sign up with Google
         </button>
       </div>
-
       {/* Divider */}
-      <div className="divider px-8">Or continue with</div>
-
+      {/* <div className="divider px-8">Or continue with</div>
       {/* Registration Form */}
       <form onSubmit={handleRegister} className="card-body pt-0">
         <fieldset>
-          {/* name */}
           <label className="label">Name</label>
           <input
             type="text"
@@ -119,7 +130,6 @@ const Register = () => {
           />
           {nameError && <p className="text-red-500 text-sm">{nameError}</p>}
 
-          {/* email */}
           <label className="label mt-4">Email</label>
           <input
             type="email"
@@ -130,7 +140,6 @@ const Register = () => {
           />
           {emailError && <p className="text-red-500 text-sm">{emailError}</p>}
 
-          {/* photoURL */}
           <label className="label mt-4">Photo URL</label>
           <input
             type="text"
@@ -140,7 +149,6 @@ const Register = () => {
           />
           {photoError && <p className="text-red-500 text-sm">{photoError}</p>}
 
-          {/* password */}
           <label className="label mt-4">Password</label>
           <input
             type="password"

@@ -6,11 +6,14 @@ import CompanyDetails from "../pages/CompanyDetails";
 import Login from "../pages/AuthPages/Login";
 import Register from "../pages/AuthPages/Register";
 import PrivateRoute from "../provider/PrivateRoute";
+import ErrorPage from "../pages/ErrorPage";
+import MyProfile from "../pages/MyProfile";
 
 export const router = createBrowserRouter([
   {
     path: "/",
     Component: MainLayout,
+    errorElement: <ErrorPage />,
     children: [
       {
         index: true,
@@ -34,6 +37,15 @@ export const router = createBrowserRouter([
         element: (
           <PrivateRoute>
             <CompanyDetails></CompanyDetails>
+          </PrivateRoute>
+        ),
+      },
+      {
+        path: "/myProfile",
+        element: (
+          <PrivateRoute>
+            {" "}
+            <MyProfile></MyProfile>{" "}
           </PrivateRoute>
         ),
       },
