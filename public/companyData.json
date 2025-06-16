@@ -1,0 +1,422 @@
+[
+    {
+        "id": "1",
+        "name": "Grameenphone Ltd.",
+        "logo": "https://logo.clearbit.com/grameenphone.com",
+        "location": "Bangladesh",
+        "website": "https://grameenphone.com",
+        "industry": "Various",
+        "jobs": [
+            {
+                "id": "job-101",
+                "title": "Software Engineer",
+                "bannerImage": "https://images.unsplash.com/photo-1581090700227-4c70b0c59c89",
+                "location": "Dhaka",
+                "salary": "$700 - $1,200/month",
+                "jobType": "Full-time",
+                "description": "We are looking for a Software Engineer to join our development team.",
+                "requirements": [
+                    "Proficient in HTML, CSS, and JavaScript",
+                    "Experience with React or Next.js",
+                    "Knowledge of RESTful APIs",
+                    "Good understanding of responsive design",
+                    "Problem-solving mindset"
+                ]
+            },
+            {
+                "id": "job-102",
+                "title": "Product Manager",
+                "bannerImage": "https://images.unsplash.com/photo-1557804506-669a67965ba0",
+                "location": "Hybrid",
+                "salary": "$1000 - $1,800/month",
+                "jobType": "Full-time",
+                "description": "Oversee product development and strategy implementation.",
+                "requirements": [
+                    "Experience in product management",
+                    "Strong communication skills",
+                    "Analytical mindset",
+                    "Knowledge of Agile/Scrum",
+                    "Familiar with market analysis tools"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "2",
+        "name": "Walton Group",
+        "logo": "https://logo.clearbit.com/waltonbd.com",
+        "location": "Bangladesh",
+        "website": "https://waltonbd.com",
+        "industry": "Various",
+        "jobs": [
+            {
+                "id": "job-201",
+                "title": "Software Engineer",
+                "bannerImage": "https://images.unsplash.com/photo-1581090700227-4c70b0c59c89",
+                "location": "Dhaka",
+                "salary": "$700 - $1,200/month",
+                "jobType": "Full-time",
+                "description": "We are looking for a Software Engineer to join our development team.",
+                "requirements": [
+                    "Proficient in HTML, CSS, and JavaScript",
+                    "Experience with React or Next.js",
+                    "Knowledge of RESTful APIs",
+                    "Good understanding of responsive design",
+                    "Problem-solving mindset"
+                ]
+            },
+            {
+                "id": "job-202",
+                "title": "Product Manager",
+                "bannerImage": "https://images.unsplash.com/photo-1557804506-669a67965ba0",
+                "location": "Hybrid",
+                "salary": "$1000 - $1,800/month",
+                "jobType": "Full-time",
+                "description": "Oversee product development and strategy implementation.",
+                "requirements": [
+                    "Experience in product management",
+                    "Strong communication skills",
+                    "Analytical mindset",
+                    "Knowledge of Agile/Scrum",
+                    "Familiar with market analysis tools"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "3",
+        "name": "British American Tobacco Bangladesh",
+        "logo": "https://logo.clearbit.com/batbangladesh.com",
+        "location": "Bangladesh",
+        "website": "https://batbangladesh.com",
+        "industry": "Various",
+        "jobs": [
+            {
+                "id": "job-301",
+                "title": "Software Engineer",
+                "bannerImage": "https://images.unsplash.com/photo-1581090700227-4c70b0c59c89",
+                "location": "Dhaka",
+                "salary": "$700 - $1,200/month",
+                "jobType": "Full-time",
+                "description": "We are looking for a Software Engineer to join our development team.",
+                "requirements": [
+                    "Proficient in HTML, CSS, and JavaScript",
+                    "Experience with React or Next.js",
+                    "Knowledge of RESTful APIs",
+                    "Good understanding of responsive design",
+                    "Problem-solving mindset"
+                ]
+            },
+            {
+                "id": "job-302",
+                "title": "Product Manager",
+                "bannerImage": "https://images.unsplash.com/photo-1557804506-669a67965ba0",
+                "location": "Hybrid",
+                "salary": "$1000 - $1,800/month",
+                "jobType": "Full-time",
+                "description": "Oversee product development and strategy implementation.",
+                "requirements": [
+                    "Experience in product management",
+                    "Strong communication skills",
+                    "Analytical mindset",
+                    "Knowledge of Agile/Scrum",
+                    "Familiar with market analysis tools"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "4",
+        "name": "Robi Axiata Ltd.",
+        "logo": "https://logo.clearbit.com/robi.com.bd",
+        "location": "Bangladesh",
+        "website": "https://robi.com.bd",
+        "industry": "Various",
+        "jobs": [
+            {
+                "id": "job-401",
+                "title": "Software Engineer",
+                "bannerImage": "https://images.unsplash.com/photo-1581090700227-4c70b0c59c89",
+                "location": "Dhaka",
+                "salary": "$700 - $1,200/month",
+                "jobType": "Full-time",
+                "description": "We are looking for a Software Engineer to join our development team.",
+                "requirements": [
+                    "Proficient in HTML, CSS, and JavaScript",
+                    "Experience with React or Next.js",
+                    "Knowledge of RESTful APIs",
+                    "Good understanding of responsive design",
+                    "Problem-solving mindset"
+                ]
+            },
+            {
+                "id": "job-402",
+                "title": "Product Manager",
+                "bannerImage": "https://images.unsplash.com/photo-1557804506-669a67965ba0",
+                "location": "Hybrid",
+                "salary": "$1000 - $1,800/month",
+                "jobType": "Full-time",
+                "description": "Oversee product development and strategy implementation.",
+                "requirements": [
+                    "Experience in product management",
+                    "Strong communication skills",
+                    "Analytical mindset",
+                    "Knowledge of Agile/Scrum",
+                    "Familiar with market analysis tools"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "5",
+        "name": "Square Pharmaceuticals",
+        "logo": "https://logo.clearbit.com/squarepharma.com.bd",
+        "location": "Bangladesh",
+        "website": "https://squarepharma.com.bd",
+        "industry": "Various",
+        "jobs": [
+            {
+                "id": "job-501",
+                "title": "Software Engineer",
+                "bannerImage": "https://images.unsplash.com/photo-1581090700227-4c70b0c59c89",
+                "location": "Dhaka",
+                "salary": "$700 - $1,200/month",
+                "jobType": "Full-time",
+                "description": "We are looking for a Software Engineer to join our development team.",
+                "requirements": [
+                    "Proficient in HTML, CSS, and JavaScript",
+                    "Experience with React or Next.js",
+                    "Knowledge of RESTful APIs",
+                    "Good understanding of responsive design",
+                    "Problem-solving mindset"
+                ]
+            },
+            {
+                "id": "job-502",
+                "title": "Product Manager",
+                "bannerImage": "https://images.unsplash.com/photo-1557804506-669a67965ba0",
+                "location": "Hybrid",
+                "salary": "$1000 - $1,800/month",
+                "jobType": "Full-time",
+                "description": "Oversee product development and strategy implementation.",
+                "requirements": [
+                    "Experience in product management",
+                    "Strong communication skills",
+                    "Analytical mindset",
+                    "Knowledge of Agile/Scrum",
+                    "Familiar with market analysis tools"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "6",
+        "name": "BEXIMCO Group",
+        "logo": "https://logo.clearbit.com/beximco.com",
+        "location": "Bangladesh",
+        "website": "https://beximco.com",
+        "industry": "Various",
+        "jobs": [
+            {
+                "id": "job-601",
+                "title": "Software Engineer",
+                "bannerImage": "https://images.unsplash.com/photo-1581090700227-4c70b0c59c89",
+                "location": "Dhaka",
+                "salary": "$700 - $1,200/month",
+                "jobType": "Full-time",
+                "description": "We are looking for a Software Engineer to join our development team.",
+                "requirements": [
+                    "Proficient in HTML, CSS, and JavaScript",
+                    "Experience with React or Next.js",
+                    "Knowledge of RESTful APIs",
+                    "Good understanding of responsive design",
+                    "Problem-solving mindset"
+                ]
+            },
+            {
+                "id": "job-602",
+                "title": "Product Manager",
+                "bannerImage": "https://images.unsplash.com/photo-1557804506-669a67965ba0",
+                "location": "Hybrid",
+                "salary": "$1000 - $1,800/month",
+                "jobType": "Full-time",
+                "description": "Oversee product development and strategy implementation.",
+                "requirements": [
+                    "Experience in product management",
+                    "Strong communication skills",
+                    "Analytical mindset",
+                    "Knowledge of Agile/Scrum",
+                    "Familiar with market analysis tools"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "7",
+        "name": "Abul Khair Group",
+        "logo": "https://logo.clearbit.com/abulkhairgroup.com",
+        "location": "Bangladesh",
+        "website": "https://abulkhairgroup.com",
+        "industry": "Various",
+        "jobs": [
+            {
+                "id": "job-701",
+                "title": "Software Engineer",
+                "bannerImage": "https://images.unsplash.com/photo-1581090700227-4c70b0c59c89",
+                "location": "Dhaka",
+                "salary": "$700 - $1,200/month",
+                "jobType": "Full-time",
+                "description": "We are looking for a Software Engineer to join our development team.",
+                "requirements": [
+                    "Proficient in HTML, CSS, and JavaScript",
+                    "Experience with React or Next.js",
+                    "Knowledge of RESTful APIs",
+                    "Good understanding of responsive design",
+                    "Problem-solving mindset"
+                ]
+            },
+            {
+                "id": "job-702",
+                "title": "Product Manager",
+                "bannerImage": "https://images.unsplash.com/photo-1557804506-669a67965ba0",
+                "location": "Hybrid",
+                "salary": "$1000 - $1,800/month",
+                "jobType": "Full-time",
+                "description": "Oversee product development and strategy implementation.",
+                "requirements": [
+                    "Experience in product management",
+                    "Strong communication skills",
+                    "Analytical mindset",
+                    "Knowledge of Agile/Scrum",
+                    "Familiar with market analysis tools"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "8",
+        "name": "Pran-RFL Group",
+        "logo": "https://logo.clearbit.com/pranfoods.net",
+        "location": "Bangladesh",
+        "website": "https://pran-rflgroup.com",
+        "industry": "Various",
+        "jobs": [
+            {
+                "id": "job-801",
+                "title": "Software Engineer",
+                "bannerImage": "https://images.unsplash.com/photo-1581090700227-4c70b0c59c89",
+                "location": "Dhaka",
+                "salary": "$700 - $1,200/month",
+                "jobType": "Full-time",
+                "description": "We are looking for a Software Engineer to join our development team.",
+                "requirements": [
+                    "Proficient in HTML, CSS, and JavaScript",
+                    "Experience with React or Next.js",
+                    "Knowledge of RESTful APIs",
+                    "Good understanding of responsive design",
+                    "Problem-solving mindset"
+                ]
+            },
+            {
+                "id": "job-802",
+                "title": "Product Manager",
+                "bannerImage": "https://images.unsplash.com/photo-1557804506-669a67965ba0",
+                "location": "Hybrid",
+                "salary": "$1000 - $1,800/month",
+                "jobType": "Full-time",
+                "description": "Oversee product development and strategy implementation.",
+                "requirements": [
+                    "Experience in product management",
+                    "Strong communication skills",
+                    "Analytical mindset",
+                    "Knowledge of Agile/Scrum",
+                    "Familiar with market analysis tools"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "9",
+        "name": "City Group",
+        "logo": "https://logo.clearbit.com/citygroup.com.bd",
+        "location": "Bangladesh",
+        "website": "https://citygroup.com.bd",
+        "industry": "Various",
+        "jobs": [
+            {
+                "id": "job-901",
+                "title": "Software Engineer",
+                "bannerImage": "https://images.unsplash.com/photo-1581090700227-4c70b0c59c89",
+                "location": "Dhaka",
+                "salary": "$700 - $1,200/month",
+                "jobType": "Full-time",
+                "description": "We are looking for a Software Engineer to join our development team.",
+                "requirements": [
+                    "Proficient in HTML, CSS, and JavaScript",
+                    "Experience with React or Next.js",
+                    "Knowledge of RESTful APIs",
+                    "Good understanding of responsive design",
+                    "Problem-solving mindset"
+                ]
+            },
+            {
+                "id": "job-902",
+                "title": "Product Manager",
+                "bannerImage": "https://images.unsplash.com/photo-1557804506-669a67965ba0",
+                "location": "Hybrid",
+                "salary": "$1000 - $1,800/month",
+                "jobType": "Full-time",
+                "description": "Oversee product development and strategy implementation.",
+                "requirements": [
+                    "Experience in product management",
+                    "Strong communication skills",
+                    "Analytical mindset",
+                    "Knowledge of Agile/Scrum",
+                    "Familiar with market analysis tools"
+                ]
+            }
+        ]
+    },
+    {
+        "id": "10",
+        "name": "Meghna Group",
+        "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWQU5LuZvTALlOA2xH4yy9NdEXmJQ9syTLTQ&s",
+        "location": "Bangladesh",
+        "website": "https://meghnagroup.com",
+        "industry": "Various",
+        "jobs": [
+            {
+                "id": "job-1001",
+                "title": "Software Engineer",
+                "bannerImage": "https://images.unsplash.com/photo-1581090700227-4c70b0c59c89",
+                "location": "Dhaka",
+                "salary": "$700 - $1,200/month",
+                "jobType": "Full-time",
+                "description": "We are looking for a Software Engineer to join our development team.",
+                "requirements": [
+                    "Proficient in HTML, CSS, and JavaScript",
+                    "Experience with React or Next.js",
+                    "Knowledge of RESTful APIs",
+                    "Good understanding of responsive design",
+                    "Problem-solving mindset"
+                ]
+            },
+            {
+                "id": "job-1002",
+                "title": "Product Manager",
+                "bannerImage": "https://images.unsplash.com/photo-1557804506-669a67965ba0",
+                "location": "Hybrid",
+                "salary": "$1000 - $1,800/month",
+                "jobType": "Full-time",
+                "description": "Oversee product development and strategy implementation.",
+                "requirements": [
+                    "Experience in product management",
+                    "Strong communication skills",
+                    "Analytical mindset",
+                    "Knowledge of Agile/Scrum",
+                    "Familiar with market analysis tools"
+                ]
+            }
+        ]
+    }
+]
