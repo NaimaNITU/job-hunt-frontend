@@ -1,8 +1,10 @@
-import React, { use, useEffect } from "react";
+import React, { useContext, useEffect } from "react";
 import { AuthContext } from "../provider/AuthProvider";
+import { useNavigate } from "react-router";
 
 const MyProfile = () => {
-  const { user } = use(AuthContext);
+  const { user } = useContext(AuthContext);
+  const navigate = useNavigate();
 
   useEffect(() => {
     document.title = "My Profile | JobHunt";
@@ -15,6 +17,7 @@ const MyProfile = () => {
           <img
             src={user?.photoURL || "https://i.ibb.co/ZYW3VTp/brown-brim.png"}
             alt="User"
+            title={user?.displayName || "No Name Available"}
             className="w-24 h-24 rounded-full border-4 border-primary mb-4"
           />
           <h2 className="text-xl font-semibold text-center">
@@ -24,11 +27,17 @@ const MyProfile = () => {
             {user?.email || "No Email Available"}
           </p>
 
-          {/* Optional: Add more info if available */}
           <div className="mt-4 text-sm text-center text-gray-500">
             <p>User ID: {user?.uid}</p>
             <p>Account Verified: {user?.emailVerified ? "Yes" : "No"}</p>
           </div>
+
+          <button
+            onClick={() => navigate("/update-profile")}
+            className="btn btn-primary mt-6"
+          >
+            Update Information
+          </button>
         </div>
       </div>
     </div>

@@ -18,7 +18,9 @@ const Navbar = () => {
       .then(() => {
         alert("You have Sign Out Successfully");
       })
-      .catch((error) => console.error(error));
+      .catch((error) => {
+        // console.error(error);
+      });
   };
 
   const toggleMobileMenu = () => setIsMobileMenuOpen(!isMobileMenuOpen);

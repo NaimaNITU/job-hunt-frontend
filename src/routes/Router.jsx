@@ -10,6 +10,8 @@ import ErrorPage from "../pages/ErrorPage";
 import MyProfile from "../pages/MyProfile";
 import AllJobs from "../pages/AllJobs";
 import ApplyWithConfidence from "../pages/ApplyWithConfidence";
+import ForgotPassword from "../pages/AuthPages/ForgotPassword";
+import UpdateProfile from "../pages/UpdateProfile";
 
 export const router = createBrowserRouter([
   {
@@ -28,6 +30,10 @@ export const router = createBrowserRouter([
       {
         path: "/register",
         Component: Register,
+      },
+      {
+        path: "/forgot-password",
+        Component: ForgotPassword,
       },
       {
         path: "/companies",
@@ -50,6 +56,10 @@ export const router = createBrowserRouter([
             <MyProfile></MyProfile>{" "}
           </PrivateRoute>
         ),
+      },
+      {
+        path: "/update-profile",
+        Component: UpdateProfile,
       },
       {
         path: "/allJobs",
