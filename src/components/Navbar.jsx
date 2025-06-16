@@ -1,104 +1,93 @@
-// import React from "react";
-// import { NavLink, useNavigate } from "react-router";
-// import { FaSignOutAlt } from "react-icons/fa";
-// import AuthHook from "../../hooks/AuthHook";
-
-// const Navbar = () => {
-//   const { user, logout } = AuthHook();
-//   const navigate = useNavigate();
-
-//   const handleLogout = async () => {
-//     await logout();
-//     navigate("/signin");
-//   };
-
-//   return (
-//     <nav className="bg-white shadow-md px-6 py-4 flex justify-between items-center">
-//       {/* Logo */}
-//       <NavLink to="/" className="text-2xl font-bold text-blue-600">
-//         JobConnect
-//       </NavLink>
-
-//       {/* Navigation Links */}
-//       <div className="flex items-center space-x-4">
-//         <NavLink to="/" className="text-gray-700 hover:text-blue-600">
-//           Home
-//         </NavLink>
-//         <NavLink to="/jobs" className="text-gray-700 hover:text-blue-600">
-//           All Jobs
-//         </NavLink>
-
-//         {/* Conditional - If user is not logged in */}
-//         {!user && (
-//           <>
-//             <NavLink
-//               to="/signin"
-//               className="px-4 py-1 bg-blue-600 text-white rounded hover:bg-blue-700"
-//             >
-//               Login
-//             </NavLink>
-//             <NavLink
-//               to="/register"
-//               className="px-4 py-1 border border-blue-600 text-blue-600 rounded hover:bg-blue-100"
-//             >
-//               Register
-//             </NavLink>
-//           </>
-//         )}
-
-//         {/* Conditional - If user is logged in */}
-//         {user && (
-//           <>
-//             <img
-//               src={user.photoURL || "/default-user.png"}
-//               alt="Profile"
-//               onClick={() => navigate("/profile")}
-//               className="w-10 h-10 rounded-full cursor-pointer border-2 border-blue-600"
-//               title="My Profile"
-//             />
-//             <button
-//               onClick={handleLogout}
-//               className="flex items-center text-red-600 hover:text-red-800"
-//               title="Logout"
-//             >
-//               <FaSignOutAlt className="mr-1" />
-//               Logout
-//             </button>
-//           </>
-//         )}
-//       </div>
-//     </nav>
-//   );
-// };
-
-// export default Navbar;
-
-import React from "react";
-import { Link } from "react-router";
+import React, { use } from "react";
+import { Link, NavLink } from "react-router";
+import { FaPhoenixFramework, FaSignOutAlt, FaUserCircle } from "react-icons/fa";
+import { AuthContext } from "../provider/AuthProvider";
 
 const Navbar = () => {
+  const { user, userSignOut } = use(AuthContext);
+
+  const handleSignOut = () => {
+    userSignOut()
+      .then(() => {
+        alert("You have Sign Out Successfully");
+      })
+      .catch((error) => console.error(error));
+  };
   return (
     <nav className="bg-white shadow-md">
-      <div className="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
+      <div className="container mx-auto px-4 py-3 flex items-center justify-between">
         {/* Logo */}
-        <Link to="/" className="text-xl font-bold text-blue-600">
-          MyApp
+        <Link
+          to="/"
+          className="text-2xl font-bold text-blue-600 flex items-center"
+        >
+          <FaPhoenixFramework />
+          JobHunt
         </Link>
 
         {/* Nav Links */}
-        <div className="space-x-4">
-          <Link to="/" className="text-gray-700 hover:text-blue-600">
+        <div className="flex items-center gap-6">
+          <NavLink
+            to="/"
+            className={({ isActive }) =>
+              isActive ? "text-blue-600 font-semibold" : "text-gray-700"
+            }
+          >
             Home
-          </Link>
-          <Link to="/about" className="text-gray-700 hover:text-blue-600">
-            About
-          </Link>
-          <Link to="/services" className="text-gray-700 hover:text-blue-600">
-            Services
-          </Link>
-          <Link to="/contact" className="text-gray-700 hover:text-blue-600">
-            Contact
-          </Link>
+          </NavLink>
+          <NavLink
+            to="/jobs"
+            className={({ isActive }) =>
+              isActive ? "text-blue-600 font-semibold" : "text-gray-700"
+            }
+          >
+            All Jobs
+          </NavLink>
+          <NavLink
+            to="/companies"
+            className={({ isActive }) =>
+              isActive ? "text-blue-600 font-semibold" : "text-gray-700"
+            }
+          >
+            Companies
+          </NavLink>
+
+          {/* Auth Links */}
+          {user ? (
+            <>
+              {user.photoURL ? (
+                <img
+                  className="w-10 h-10 rounded-full"
+                  src={user.photoURL}
+                  alt=""
+                />
+              ) : (
+                <FaUserCircle size={12} />
+              )}
+
+              <NavLink
+                onClick={handleSignOut}
+                className="text-blue-600 border border-blue-600 px-4 py-2 rounded-md hover:bg-blue-600 hover:text-white"
+              >
+                Sign Out
+              </NavLink>
+            </>
+          ) : (
+            <>
+              <NavLink
+                to="/login"
+                className="text-white bg-blue-600 px-4 py-2 rounded-md hover:bg-blue-700"
+              >
+                Login
+              </NavLink>
+              <NavLink
+                to="/register"
+                className="text-blue-600 border border-blue-600 px-4 py-2 rounded-md hover:bg-blue-600 hover:text-white"
+              >
+                Register
+              </NavLink>
+            </>
+          )}
         </div>
       </div>
     </nav>

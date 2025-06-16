@@ -13,12 +13,12 @@ const Hero = () => {
             <span className="text-blue-600">Career Opportunity</span>
           </h1>
           <p className="text-lg text-gray-600 mb-6">
-            Job Track helps you explore a wide range of jobs from top companies.
+            Job Hunt helps you explore a wide range of jobs from top companies.
             Find roles that match your skills, review job criteria, and apply
             with confidence.
           </p>
           <Link
-            to="/jobs"
+            to="/companies"
             className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-md shadow-md transition"
           >
             Browse Jobs

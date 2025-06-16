@@ -1,4 +1,5 @@
 import React from "react";
+import { FaPhoenixFramework } from "react-icons/fa";
 import { NavLink } from "react-router";
 
 const Footer = () => {
@@ -7,7 +8,11 @@ const Footer = () => {
       <div className="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
         {/* Logo & About */}
         <div>
-          <h2 className="text-2xl font-bold text-blue-400 mb-2">JobConnect</h2>
+          <h2 className="text-2xl font-bold text-blue-400 mb-2 flex items-center">
+            {" "}
+            <FaPhoenixFramework />
+            JobHunt
+          </h2>
           <p className="text-sm text-gray-400">
             Empowering job seekers and employers with a smooth recruitment
             experience.
@@ -45,7 +50,7 @@ const Footer = () => {
         <div>
           <h3 className="text-lg font-semibold mb-2">Contact</h3>
           <ul className="text-sm text-gray-400 space-y-1">
-            <li>Email: support@jobconnect.com</li>
+            <li>Email: support@jobhunt.com</li>
             <li>Phone: +880 1234 567 890</li>
             <li>Address: Dhaka, Bangladesh</li>
           </ul>
@@ -53,7 +58,8 @@ const Footer = () => {
       </div>
 
       <div className="text-center text-gray-500 text-sm mt-10 border-t border-gray-700 pt-4">
-        © {new Date().getFullYear()} JobConnect. All rights reserved.
+        © {new Date().getFullYear()}
+        JobHunt. All rights reserved.
       </div>
     </footer>
   );
