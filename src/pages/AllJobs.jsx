@@ -10,7 +10,7 @@ const AllJobs = () => {
   // Flatten the nested jobs array
   const allJobs = allJobData.flatMap((company) => company.jobs);
 
-  console.log(allJobs); // All job objects in one array
+  // console.log(allJobs); // All job objects in one array
 
   return (
     <>

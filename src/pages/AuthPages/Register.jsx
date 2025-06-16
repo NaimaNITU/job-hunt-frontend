@@ -92,12 +92,12 @@ const Register = () => {
             navigate(location.state || "/");
           })
           .catch((error) => {
-            console.log(error);
+            // console.log(error);
             setUser(user);
           });
       })
       .catch((error) => {
-        console.log(error);
+        // console.log(error);
       });
   };
 
