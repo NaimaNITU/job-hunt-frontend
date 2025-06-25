@@ -1,63 +1,106 @@
-# JobHunt
+# 💼 JobTrack – Smart Job Portal
 
-## Project Overview
+🔗 **Live Site**: [https://job-hunt-7328a.web.app](https://job-hunt-7328a.web.app)
 
-JobTrack is an innovative and user-friendly job search platform designed to connect job seekers with a wide range of job opportunities across various companies. The website offers an intuitive interface where users can explore companies, review detailed job listings, and easily apply for positions that match their qualifications. This project aims to streamline the job hunting process and empower users to find their ideal job effortlessly.
+🔍 **JobTrack** – A modern and user-friendly job search platform built with **React**, **Firebase**, and **Tailwind CSS**. It enables users to browse companies, view job openings, manage profiles, and apply for jobs directly. This responsive app offers seamless authentication, protected routes, and engaging UI transitions for a professional job-hunting experience.
 
-## Live Demo
+---
 
-[Live Site URL](https://job-hunt-7328a.web.app)
+## 📸 Screenshot
 
-## Key Features
+![App Screenshot](public/screenshot1.png)  
+![App Screenshot](public/screenshot2.png)
 
-- **User Authentication**
+---
 
-  - User registration with email and password
-  - Login with email/password and Google social login
-  - Password validation enforcing uppercase, lowercase, and minimum length criteria
-  - Forgot password feature (password reset link redirecting user to Gmail)
-  - Logout functionality with dynamic navbar updates
+## 🛠️ Technologies Used
 
-- **Private Routes**
+- **React**
+- **Firebase Authentication**
+- **React Router**
+- **Tailwind CSS**
+- **DaisyUI**
+- **Framer Motion**
+- **React Icons**
+- **React Toastify**
+- **Vite**
 
-  - Company Details page accessible only by logged-in users
-  - My Profile page accessible only by logged-in users
+---
 
-- **Company & Job Listings**
+## ✨ Key Features
 
-  - Displays multiple companies fetched from a JSON data source
-  - Company logos displayed in a responsive grid
-  - Clicking a company shows detailed company information and job listings
-  - Job detail modal with apply button that opens the company’s website
+- 🔐 **Authentication**
+  - Email/password sign-up & login
+  - Google social login
+  - Forgot password with Gmail reset link
+  - Dynamic navbar based on login state
 
-- **Profile Management**
+- 🔒 **Private Routes**
+  - Company details and profile pages require authentication
 
-  - Users can view their profile including name, photo, and email
-  - Users can update their profile information (name and photo URL) via a dedicated update page
+- 🏢 **Job Listings**
+  - Browse companies from JSON
+  - View detailed company and job info
+  - Apply via external company job links
 
-- **Responsive Design**
+- 👤 **Profile Management**
+  - View and update name & profile picture
+  - Managed securely via Firebase
 
-  - Fully responsive and mobile-friendly design
-  - Works seamlessly on mobile, tablet, and desktop devices
+- 🌐 **Navigation & UI**
+  - 404 page for unknown routes
+  - Custom route titles
+  - Responsive header/footer
+  - Framer Motion animations
 
-- **Navigation and Layout**
+- 📱 **Fully Responsive**
+  - Optimized for desktop, tablet, and mobile devices
 
-  - Consistent header and footer layout across pages
-  - Dynamic page titles based on current route
-  - 404 Not Found page for unknown routes
-  - Additional custom route relevant to the website theme
+---
 
-- **Animations**
-  - Subtle animations for enhanced user experience using [Motion (Framer Motion)](https://www.framer.com/motion/)
+## 📦 Frontend Dependencies
 
-## Technologies & Packages Used
+| Package                | Version     |
+|------------------------|-------------|
+| **react**              | ^19.1.0     |
+| **react-dom**          | ^19.1.0     |
+| **react-router**       | ^7.6.2      |
+| **firebase**           | ^11.9.1     |
+| **tailwindcss**        | ^4.1.10     |
+| **daisyui**            | ^5.0.43     |
+| **framer-motion**      | ^12.18.1    |
+| **motion**             | ^12.18.1    |
+| **react-icons**        | ^5.5.0      |
+| **vite**               | ^6.3.5      |
+| **@vitejs/plugin-react** | ^4.4.1   |
+| eslint, postcss, etc.  | for tooling |
 
-- **React** - Frontend UI library
-- **React Router DOM** - Client-side routing
-- **Firebase Authentication** - User auth backend service
-- **Tailwind CSS** - Utility-first CSS framework for styling
-- **DaisyUI** - Tailwind CSS component library for UI components
-- **Framer Motion** - Animation library for React
-- **React Toastify** - Toast notifications for error and success messages
-- **Environment Variables** - For securely managing Firebase configuration keys
-- **Vite** - Build tool and development server
+---
+
+## 🧑‍💻 Development Setup
+git clone https://github.com/your-username/jobtrack.git
+cd jobtrack
+npm install
+
+Create a .env file in the root directory and add:
+VITE_apiKey=your_api_key
+VITE_authDomain=your_auth_domain
+VITE_projectId=your_project_id
+VITE_storageBucket=your_storage_bucket
+VITE_messagingSenderId=your_messaging_sender_id
+VITE_appId=your_app_id
+
+npm run dev     # Start development server
+npm run build   # Build for production
+
+
+🔗 Links & Resources
+🌐 Live Site
+
+📁 Client GitHub Repo: your-repo-link-here
+
+🔥 Firebase Docs
+
+💡 Vite Docs
+
+❤️ Feel free to fork, contribute, or enhance this app to support more job seekers!
